@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> CLOSURE HANDSON</h1>
+    <h4>
+        Question 1 " function counter(){
+        var counter = 0;
+
+        function IncreaseCounter() {
+        return counter += 1;
+        };
+
+        return IncreaseCounter;
+        }
+
+        var counter = counter();
+        alert(counter());
+        alert(counter());
+        alert(counter());
+        alert(counter());"
+    </h4>
+    <h5>
+        Answer.1 <br>
+        1 <br>
+        2 <br>
+        3 <br>
+        4 <br>
+    </h5>
+    <br>
+    <hr>
+    <h4>
+        Question 2 "let count = 0;
+        (function () {
+        if (count === 0) {
+        let count = 1;
+        console.log(count); // What is logged?
+        }
+        console.log(count); // What is logged?
+        })();"
+    </h4>
+    <h5>
+        Answer .2 <br>
+        1 <br>
+        0 <br>
+    </h5>
+    <br>
+    <hr>
+    <h4>
+        Question 3 "for (var i = 0; i < 3; i++) { setTimeout(function log() { console.log(i); // What is logged? },
+            1000); }" </h4>
+            <h5>
+                Answer.3 <br>
+                3 <br>
+                3 <br>
+                3 <br>
+            </h5>
+            <br>
+            <hr>
+            <h4>
+                Question 4 Write a code to calculate area of a rectangle using inner function. In this case outer
+                function should accept parameter length and inner function should accept parameter breadth.
+            </h4>
+            <h5>
+                Answer. 4 <br>
+                Area = 81
+
+            </h5>
+            <br>
+            <hr>
+            <h4>
+                Question 5 Take a variable in outer function and create an inner function to increase the counter every
+                time it is called
+            </h4>
+            <h5>
+                Answer .5 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+            </h5>
+            <br>
+            <hr>
+            <h4>
+                Question 6 "Print Output
+
+                var a = 12;
+                (function () {
+                alert(a);
+                })();"
+            </h4>
+            <h5>
+                Answer.6 <br>
+                12 <br>
+            </h5>
+            <br>
+            <hr>
+            <h4>
+                Question 7 "var a = 10;
+                var x = (function () {
+                var a = 12;
+                return function () {
+                alert(a);
+                };
+                })();
+                x();"
+            </h4>
+            <h5>
+                Answer 7. 12 <br>
+            </h5>
+            <br>
+            <hr>
+            <h4>
+                Question 8 "var globalVar = ""xyz"";
+
+                (function outerFunc(outerArg) {
+                var outerVar = 'a';
+
+                (function innerFunc(innerArg) {
+                var innerVar = 'b';
+
+                console.log(
+                ""outerArg = "" + outerArg + ""\n"" +
+                ""innerArg = "" + innerArg + ""\n"" +
+                ""outerVar = "" + outerVar + ""\n"" +
+                ""innerVar = "" + innerVar + ""\n"" +
+                ""globalVar = "" + globalVar);
+
+                })(456);
+                })(123);"
+            </h4>
+            <h5>
+                Answer 8. <br>
+                outerArg = 123 <br>
+                innerArg = 456 <br>
+                outerVar = a <br>
+                innerVar = b <br>
+                globalVar = xyz <br>
+            </h5>
+            <br>
+            <hr>
+
+
+
+
+
+            <script src="./script.js"></script>
+</body>
+
+</html>
